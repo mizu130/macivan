@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="main.css">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        
+        nav {
+            background-color: #333;
+            overflow: hidden;
+            display: flex;
+            justify-content: flex-end;
+            padding: 10px 20px;
+        }
+        
+        nav a {
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        
+        .content {
+            padding: 20px;
+        }
+        
+        h1 {
+            color: #333;
+        }
+        
+        @media screen and (max-width: 600px) {
+            nav {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            nav a {
+                text-align: left;
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="about.html">About</a>
+        <a href="#services">Services</a>
+        <a href="contact.html">Contact</a>
+        <a href="https://www.facebook.com/macivan.catilo"><i class="fab fa-facebook-f" style="font-size: 30px; color: #3b5998;"></i></a>
+    </nav>
+
+    <div class="container">
+        <img src="mac.jpg">
+
+        <h1 class="one" style="color: white"><i>Personal Information</i></h1>
+        <ul>
+            <p>Mac Ivan A Catilo</p>
+            <p>BIRTH DATE: January 4, 2002</p>
+            <p>ADRESS: PALLOCAN WEST BATANGAS CITY</p>
+            <p>EMAIL ADRESS: catilo.macivan.c210736@gmail.com</p>
+            <p>CONTACT NO. 09164386375</p>
+            <p>BLOOD TYPE: B+</p>
+            <br>
+            <h1 style="color: white"><i>TECHNICAL SKILLS</i></h1>
+            <div class="list">
+                <ul>
+                    <p>Hardware and Software Troubleshooting</p>
+                    <p>Microsoft Office (MS word,excel,power point)</p>
+                    <p>Technician</p>
+                    <br>
+                    <h1 style="color: white"><i>CREDENTIALS</i></h1>
+                    <p>Highest Education Attained Senior High Graduate</p>
+                    <p>Automotive NC2 passer</p>
+                    <br>
+                </ul>
+            </div>
+            <h1 style="color: white"><i>EDUCATION</i></h1>
+        </ul>
+
+        <div class="mid">
+            <input type="text" id="num1" placeholder="Enter Number:">
+            <input type="text" id="num2" placeholder="Enter Number:">
+            <br>
+            <button onclick="plusFunction()"> + </button>
+            <button onclick="minusFunction()"> - </button>
+            <button onclick="multiFunction()"> * </button>
+            <button onclick="divideFunction()"> / </button>
+
+            <p id="result">Result:</p>
+
+        </div>
+
+        <div class="bot">
+            <p id="mac"></p>
+            <input type="text" placeholder="enter age" id="cat">
+            <button onclick="newFunc()">Click this </button>
+        </div>
+
+        <div class="top">
+            <input id="out">
+            <button onclick="MACFunc()">Click</button>
+            <p id="res" Result></p>
+        </div>
+
+        <table>
+            <table border="20px " style="position: relative; left: 60px
+            ;">
+                <tr>
+                    <th>SCHOOL</th>
+                    <th>Section</th>
+                    <th>School year</th>
+                    <th>Course</th>
+                </tr>
+                <tr>
+                    <td>Jose C. Pastor Memorial School</td>
+                    <td>Gratitude</td>
+                    <td>2007-2013</td>
+                    <td></td>
+                </tr>
+                <tr>
+
+                    <td>University Of Batangas </td>
+                    <td>Hilltop Batangas City</td>
+                    <td>2018-2020</td>
+                    <td>Techvoc</td>
+
+                </tr>
+                <tr>
+
+                    <td>Westmead International School</td>
+                    <td>BSIT 311</td>
+                    <td>2021-2025</td>
+                    <td>BSIT</td>
+                </tr>
+            </table>
+            <h1 style="color: white">SEMINARS</h1>
+            <p>ISITE</p>
+            <p>BITS</p>
+            <p>JARVIS</p>
+            <p>HACKIN KNL</p>
+            <p>Y4IT RESEARCH</p>
+            <p>BITCON</p>
+    </div>
+
+
+
+    <script>
+        function generateSnowflakes() {
+            const numberOfSnowflakes = 100;
+            for (let i = 0; i < numberOfSnowflakes; i++) {
+                const snowflake = document.createElement('div');
+                snowflake.classList.add('snowflake');
+                snowflake.innerHTML = '❄';
+                snowflake.style.left = `${Math.random() * 100}vw`;
+                snowflake.style.animationDuration = `${Math.random() * 3 + 7}s`;
+                snowflake.style.animationDelay = `${Math.random() * 5}s`;
+                document.body.appendChild(snowflake);
+            }
+        }
+
+        window.onload = generateSnowflakes;
+    </script>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
